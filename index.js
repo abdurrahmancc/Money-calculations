@@ -6,6 +6,7 @@ const clothes = document.getElementById("clothes");
 // button calculate addEventListener
 document.getElementById("btn-Calculate").addEventListener("click", function () {
   const totalExpenses = document.getElementById("totalExpenses");
+  const validIncome = document.getElementById("validIncome");
   const balance = document.getElementById("balance");
   const totalCost = expensesTotal();
 
@@ -20,6 +21,7 @@ document.getElementById("btn-Calculate").addEventListener("click", function () {
     document.getElementById("errorMessage").innerText = "";
     totalExpenses.innerText = totalCost;
     balance.innerText = updateBalance();
+    validIncome.innerText = "";
   } else {
     document.getElementById("errorMessage").innerText = "Please Enter your correct Amount";
     return;

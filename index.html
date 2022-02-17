@@ -31,7 +31,7 @@
                 <h4 class="pb-3">Income</h4>
                 <p>
                   Income:
-                  <input id="income" type="text" value="5000" class="text-center px-3 me-3" />
+                  <input id="income" type="text" class="text-center px-3 me-3" />
                 </p>
               </div>
               <!-- Expenses -->
@@ -57,16 +57,19 @@
                     Clothes: <input class="px-3 text-center" id="clothes" type="text" value="100" />
                   </p>
                 </div>
+                <div>
+                  <span class="text-danger" id="errorMessage"></span>
+                </div>
                 <button id="btn-Calculate" class="px-4 my-2 py-1 bg-primary text-white fs-5">
                   Calculate
                 </button>
               </div>
               <!-- Total Expenses  -->
               <div class="mt-4 text-black">
-                <h4>Total Expenses: <span id="totalExpenses">5500</span></h4>
+                <h4>Total Expenses: <span id="totalExpenses">00</span></h4>
               </div>
               <div class="mt-3 text-black">
-                <h4>Balance: <span id="balance">4500</span></h4>
+                <h4>Balance: <span id="balance">00</span></h4>
               </div>
               <!-- saving section -->
               <div class="mt-5 text-black">
